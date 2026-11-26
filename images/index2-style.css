@@ -113,26 +113,84 @@ nav a { text-decoration: none; color: #1F2937; font-size: 15px; font-weight: 500
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    align-items: start; /* Upar se barabar rakhne ke liye */
+    align-items: start;
 }
 
-/* EcoLife Card (W 600 x H 750) */
-.project-card:first-child img {
-    width: 100%;
+/* Dono Cards ka Common Box Style */
+.card-box {
+    border-radius: 30px;
+    padding: 50px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* EcoLife Card (Halka Mint/Cyan Background + 750px Height) */
+.ecolife-card {
+    background-color: #E7F6F5;
+    color: #18181B;
     height: 750px;
-    object-fit: cover;
-    border-radius: 30px;
-    display: block;
 }
 
-/* E-ComMart Card (Thoda chota H 670px) */
-.project-card:last-child img {
-    width: 100%;
+/* E-ComMart Card (Dark Charcoal Background + 670px Height) */
+.ecommart-card {
+    background-color: #212124;
+    color: #FFFFFF;
     height: 670px;
-    object-fit: cover;
-    border-radius: 30px;
-    display: block;
 }
+
+/* Circle aur Mockup ko Overlap Karne ka Code */
+.card-visual {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-circle {
+    position: absolute;
+    width: 340px;
+    z-index: 1;
+}
+
+.card-mockup {
+    position: relative;
+    z-index: 2;
+}
+
+.phone-size {
+    width: 245px;
+}
+
+.web-size {
+    width: 360px;
+    border-radius: 14px;
+}
+
+/* Card Text aur Badges */
+.card-content h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 14px 0 8px;
+}
+
+.card-content p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.green-badge {
+    background-color: #10B981;
+    color: #FFFFFF;
+}
+
+.tan-badge {
+    background-color: #C4A995;
+    color: #FFFFFF;
+}
+
 
 /* 3. Thank You Section */
 .thank-you {
