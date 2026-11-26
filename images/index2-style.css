@@ -1,0 +1,211 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #18181B;
+    overflow-x: hidden;
+}
+
+/* 1. Hero aur Navbar */
+.hero-wrapper {
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    background-image: radial-gradient(circle at 50% 35%, rgba(243, 244, 246, 0.8) 0%, transparent 70%);
+}
+
+.navbar {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 20px;
+}
+
+.logo-img { height: 28px; display: block; }
+nav { display: flex; align-items: center; gap: 35px; }
+nav a { text-decoration: none; color: #1F2937; font-size: 15px; font-weight: 500; }
+
+.btn-pill {
+    background: #1D56F0;
+    color: #FFFFFF !important;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px 80px;
+}
+
+.hero h1 { font-size: 64px; font-weight: 800; margin-bottom: 18px; letter-spacing: -1px; }
+.hero p { font-size: 19px; color: #6B7280; line-height: 1.6; margin-bottom: 35px; }
+.social-icons img { width: 40px; margin: 0 8px; }
+
+/* 2. Projects Container (Exact Figma 1200px) */
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Card 1: FreshToDoor (1200 x 750) */
+.featured-card {
+    background: #1B0E4E;
+    color: #FFFFFF;
+    min-height: 750px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.featured-image {
+    position: relative;
+    flex: 1.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-circle { position: absolute; width: 420px; z-index: 1; }
+.main-mockup { position: relative; width: 400px; z-index: 2; }
+.featured-info { flex: 0.9; padding-left: 20px; }
+
+.badge {
+    display: inline-block;
+    padding: 7px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+.orange { background: #F47A42; color: #FFFFFF; }
+.featured-info h2 { font-size: 46px; font-weight: 800; margin-bottom: 14px; }
+.featured-info p { font-size: 16px; opacity: 0.85; }
+
+/* Card 2 & 3: EcoLife (Bada) aur E-ComMart (Chota) */
+.two-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start; /* Upar se barabar rakhne ke liye */
+}
+
+/* EcoLife Card (W 600 x H 750) */
+.project-card:first-child img {
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+}
+
+/* E-ComMart Card (Thoda chota H 670px) */
+.project-card:last-child img {
+    width: 100%;
+    height: 670px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+}
+
+/* 3. Thank You Section */
+.thank-you {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.thank-box { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 50px; }
+.thank-text h2 { font-size: 48px; font-weight: 800; margin-bottom: 8px; }
+.small-sub { font-size: 14px; color: #6B7280; margin-bottom: 30px; }
+.big-sub { font-size: 22px; line-height: 1.5; margin-bottom: 35px; }
+
+/* Photo aur Side Outline Box */
+.thank-image { position: relative; }
+.thank-image img { width: 380px; border-radius: 24px; position: relative; z-index: 2; display: block; }
+.photo-box {
+    position: absolute;
+    width: 55px;
+    height: 178px;
+    border: 1.5px solid #2563EB;
+    border-radius: 30px;
+    left: -28px;
+    bottom: 45px;
+    z-index: 3;
+}
+
+/* 4. Footer */
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 20px;
+    border-top: 1px solid #E5E7EB;
+}
+
+footer a { text-decoration: none; color: #9CA3AF; font-size: 13px; margin-right: 25px; }
+footer div:last-child a { margin-right: 0; margin-left: 25px; }
+
+/* =========================================
+   RESPONSIVE MEDIA (Tablet aur Mobile)
+   ========================================= */
+@media (max-width: 900px) {
+    .hero-wrapper { min-height: 550px; }
+    .hero h1 { font-size: 42px; }
+    .hero p { font-size: 16px; }
+    nav { gap: 15px; }
+
+    .featured-card {
+        min-height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+    .featured-info { padding-left: 0; }
+    .featured-info h2 { font-size: 34px; }
+    .bg-circle { width: 270px; }
+    .main-mockup { width: 260px; }
+
+    .two-cards-grid { grid-template-columns: 1fr; gap: 30px; }
+    .project-card:first-child img,
+    .project-card:last-child img { height: auto; }
+
+    .thank-you { min-height: auto; padding: 60px 20px; }
+    .thank-box { flex-direction: column; text-align: center; }
+    .thank-text h2 { font-size: 36px; }
+    .thank-image img { width: 280px; }
+    .photo-box { height: 130px; left: -18px; bottom: 30px; }
+
+    footer { flex-direction: column; align-items: center; gap: 15px; }
+    footer a, footer div:last-child a { margin: 0 10px; }
+}

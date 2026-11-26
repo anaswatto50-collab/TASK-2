@@ -1,15 +1,14 @@
-/* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 body {
-    position: relative;
-    overflow-x: hidden;
-    color: #18181B;
+ position: relative;
+ overflow-x: hidden;
+ color: #18181B;
 }
 
 /* Figma Shapes */
@@ -18,85 +17,80 @@ body {
 
 /* 1. Navbar aur Hero */
 .hero-wrapper {
-    position: relative;
-    min-height: 750px;
-    background: linear-gradient(135deg, #FBFBFD 0%, #FBEFF5 55%, #F6EFFB 100%);
-    display: flex;
-    flex-direction: column;
+ position: relative;
+ min-height: 750px;
+ background: linear-gradient(135deg, #FBFBFD 0%, #FBEFF5 55%, #F6EFFB 100%);
+ display: flex;
+ flex-direction: column;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 9%;
-    z-index: 2;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 32px 9%;
+ z-index: 2;
 }
-
 .logo { font-family: 'Brush Script MT', cursive; font-size: 32px; }
 nav { display: flex; align-items: center; gap: 35px; }
 nav a { text-decoration: none; color: #1F2937; font-size: 15px; }
 
 .btn-pill {
-    background: #1D56F0;
-    color: #FFFFFF !important;
-    padding: 12px 30px;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-block;
+ background: #1D56F0;
+ color: #FFFFFF !important;
+ padding: 12px 30px;
+ border-radius: 50px;
+ font-size: 14px;
+ font-weight: 600;
+ text-decoration: none;
+ display: inline-block;
 }
-
 .hero {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px 60px;
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 40px 20px 60px;
 }
 
 .hero h1 { font-size: 64px; font-weight: 800; margin-bottom: 18px; }
 .hero p { font-size: 19px; color: #4B5563; line-height: 1.6; margin-bottom: 35px; }
 .social-icons img { width: 42px; margin: 0 8px; }
-
 /* 2. Projects Common Layout */
 .project {
-    min-height: 750px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 11%;
-    gap: 60px;
-    overflow: hidden;
+ min-height: 750px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 60px 11%;
+ gap: 60px;
+ overflow: hidden;
 }
 
 .project-image {
-    position: relative;
-    flex: 1.1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ position: relative;
+ flex: 1.1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
-
 .bg-circle { position: absolute; z-index: 1; }
 .main-mockup { position: relative; z-index: 2; }
 .project-info { flex: 0.9; padding-left: 30px; }
 
 .badge {
-    display: inline-block;
-    padding: 7px 16px;
-    border-radius: 50px;
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 18px;
+ display: inline-block;
+ padding: 7px 16px;
+ border-radius: 50px;
+ font-size: 12px;
+ font-weight: 600;
+ margin-bottom: 18px;
 }
 
 .project-info h2 { font-size: 46px; font-weight: 800; margin-bottom: 14px; }
 .project-info p { font-size: 16px; opacity: 0.85; }
-
 /* FreshToDoor */
 .dark-purple { background: #1B0E4E; color: #FFFFFF; align-items: flex-end; padding-bottom: 0; }
 .dark-purple .project-info { align-self: center; padding-bottom: 60px; }
@@ -107,12 +101,12 @@ nav a { text-decoration: none; color: #1F2937; font-size: 15px; }
 /* E-ComMart (Exact Reference Image Alignment: Circle sirf Left-Bottom se thoda bahar) */
 .warm-cream { background: #F4F2EE; }
 .circle-2 {
-    width: 440px;
-    transform: translate(-35px, 28px); /* Circle ko thoda left aur neeche kiya */
+ width: 440px;
+ transform: translate(-35px, 28px); /* Circle ko thoda left aur neeche kiya */
 }
 .mockup-2 {
-    width: 480px; /* Card bada rakha taake baqi circle peeche chhup jaye */
-    border-radius: 22px;
+ width: 480px; /* Card bada rakha taake baqi circle peeche chhup jaye */
+ border-radius: 22px;
 }
 .tan { background: #C4A995; color: #FFFFFF; }
 
@@ -120,77 +114,71 @@ nav a { text-decoration: none; color: #1F2937; font-size: 15px; }
 .periwinkle-blue { background: linear-gradient(135deg, #6E87FA 0%, #5B73F2 100%); color: #FFFFFF; }
 .mockup-3 { width: 450px; }
 .peach { background: #F7B089; color: #18181B; }
-
 /* 3. Thank You Section */
 .thank-you { min-height: 680px; display: flex; align-items: center; padding: 80px 11%; }
 .thank-box { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 50px; }
 .thank-text h2 { font-size: 48px; font-weight: 800; margin-bottom: 8px; }
 .small-sub { font-size: 14px; color: #6B7280; margin-bottom: 30px; }
 .big-sub { font-size: 22px; line-height: 1.5; margin-bottom: 35px; }
-
 /* Photo aur Side Outline Box */
 .thank-image { position: relative; }
 .thank-image img { width: 380px; border-radius: 24px; position: relative; z-index: 2; display: block; }
 .photo-box {
-    position: absolute;
-    width: 55px;
-    height: 178px;
-    border: 1.5px solid #2563EB;
-    border-radius: 30px;
-    left: -28px;
-    bottom: 45px;
-    z-index: 3;
+ position: absolute;
+ width: 55px;
+ height: 178px;
+ border: 1.5px solid #2563EB;
+ border-radius: 30px;
+ left: -28px;
+ bottom: 45px;
+ z-index: 3;
 }
-
 /* 4. Footer */
 footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 28px 11%;
-    border-top: 1px solid #E5E7EB;
+ display: flex;
+ justify-content: space-between;
+ padding: 28px 11%;
+ border-top: 1px solid #E5E7EB;
 }
 
 footer a { text-decoration: none; color: #9CA3AF; font-size: 13px; margin-right: 25px; }
 footer div:last-child a { margin-right: 0; margin-left: 25px; }
-
 /* =========================================
-   RESPONSIVE MEDIA (Tablet aur Mobile ke liye)
-   ========================================= */
+ RESPONSIVE MEDIA (Tablet aur Mobile ke liye)
+ ========================================= */
 @media (max-width: 900px) {
-    .shape-purple, .shape-blue { display: none; }
+ .shape-purple, .shape-blue { display: none; }
 
-    .navbar { padding: 20px 6%; }
-    nav { gap: 15px; }
+ .navbar { padding: 20px 6%; }
+ nav { gap: 15px; }
 
-    .hero-wrapper { min-height: 550px; }
-    .hero h1 { font-size: 40px; }
-    .hero p { font-size: 16px; }
+ .hero-wrapper { min-height: 550px; }
+ .hero h1 { font-size: 40px; }
+ .hero p { font-size: 16px; }
 
-    .project {
-        min-height: auto;
-        flex-direction: column;
-        text-align: center;
-        padding: 60px 6%;
-        gap: 40px;
-    }
+ .project {
+ min-height: auto;
+ flex-direction: column;
+ text-align: center;
+ padding: 60px 6%;
+ gap: 40px;
+ }
+ .warm-cream { flex-direction: column-reverse; }
+ .project-info { padding-left: 0; }
+ .project-info h2 { font-size: 34px; }
 
-    .warm-cream { flex-direction: column-reverse; }
-    .project-info { padding-left: 0; }
-    .project-info h2 { font-size: 34px; }
+ .circle-1 { width: 280px; top: auto; }
+ .circle-2 { width: 260px; transform: translate(-18px, 15px); }
+ .mockup-1, .mockup-2, .mockup-3 { width: 280px; }
 
-    .circle-1 { width: 280px; top: auto; }
-    .circle-2 { width: 260px; transform: translate(-18px, 15px); }
-    .mockup-1, .mockup-2, .mockup-3 { width: 280px; }
+ .dark-purple { align-items: center; padding-bottom: 60px; }
+ .dark-purple .project-info { padding-bottom: 0; }
 
-    .dark-purple { align-items: center; padding-bottom: 60px; }
-    .dark-purple .project-info { padding-bottom: 0; }
-
-    .thank-you { min-height: auto; padding: 60px 6%; }
-    .thank-box { flex-direction: column; text-align: center; }
-    .thank-text h2 { font-size: 36px; }
-    .thank-image img { width: 280px; }
-    .photo-box { height: 130px; left: -18px; bottom: 30px; }
-
-    footer { flex-direction: column; align-items: center; gap: 15px; padding: 25px 6%; }
-    footer a, footer div:last-child a { margin: 0 10px; }
+ .thank-you { min-height: auto; padding: 60px 6%; }
+ .thank-box { flex-direction: column; text-align: center; }
+ .thank-text h2 { font-size: 36px; }
+ .thank-image img { width: 280px; }
+ .photo-box { height: 130px; left: -18px; bottom: 30px; }
+ footer { flex-direction: column; align-items: center; gap: 15px; padding: 25px 6%; }
+ footer a, footer div:last-child a { margin: 0 10px; }
 }
