@@ -108,15 +108,14 @@ nav a { text-decoration: none; color: #1F2937; font-size: 15px; font-weight: 500
 .featured-info h2 { font-size: 46px; font-weight: 800; margin-bottom: 14px; }
 .featured-info p { font-size: 16px; opacity: 0.85; }
 
-
-/* Card 2 & 3: Exact Figma Dimensions (600x750 aur 540x750, Gap 51px) */
+/* Card 2 & 3: Exact Figma Layout (600x750 aur 540x750) */
 .two-cards-grid {
     display: grid;
     grid-template-columns: 600fr 540fr;
     gap: 51px;
+    align-items: start;
 }
 
-/* Dono Cards ki Height Barabar (750px) */
 .card-box {
     height: 750px;
     border-radius: 30px;
@@ -127,22 +126,19 @@ nav a { text-decoration: none; color: #1F2937; font-size: 15px; font-weight: 500
     overflow: hidden;
 }
 
-/* EcoLife Card (Thoda neeche aur lamba) */
+/* EcoLife Card (16px neeche taake upar-neeche ka exact Figma faasla aaye) */
 .ecolife-card {
     background-color: #D3F8F8;
     color: #18181B;
-    height: 750px;
     margin-top: 16px;
 }
 
-/* E-ComMart Card (Thoda upar aur chota) */
+/* E-ComMart Card (Top se upar, height 750px) */
 .ecommart-card {
     background-color: #222224;
     color: #FFFFFF;
-    height: 715px;
 }
 
-/* Circle aur Mockup Alignment */
 .card-visual {
     position: relative;
     flex: 1;
@@ -157,46 +153,21 @@ nav a { text-decoration: none; color: #1F2937; font-size: 15px; font-weight: 500
     z-index: 1;
 }
 
-/* E-ComMart ke circle ko thoda right-top par set karne ke liye */
+/* E-ComMart ka circle top-left par */
 .ecommart-card .card-circle {
-    transform: translate(35px, -25px);
+    transform: translate(-32px, -25px);
 }
 
-.card-mockup {
-    position: relative;
-    z-index: 2;
-}
+.card-mockup { position: relative; z-index: 2; }
+.phone-size { width: 265px; }
+.web-size { width: 380px; border-radius: 16px; }
 
-.phone-size {
-    width: 265px;
-}
+.card-content h2 { font-size: 38px; font-weight: 800; margin: 14px 0 8px; }
+.card-content p { font-size: 15px; opacity: 0.85; }
 
-.web-size {
-    width: 380px;
-    border-radius: 16px;
-}
+.green-badge { background-color: #26C881; color: #FFFFFF; }
+.tan-badge { background-color: #E3A869; color: #18181B; }
 
-/* Card Text aur Badges */
-.card-content h2 {
-    font-size: 38px;
-    font-weight: 800;
-    margin: 14px 0 8px;
-}
-
-.card-content p {
-    font-size: 15px;
-    opacity: 0.85;
-}
-
-.green-badge {
-    background-color: #26C881;
-    color: #FFFFFF;
-}
-
-.tan-badge {
-    background-color: #E3A869;
-    color: #18181B;
-}
 /* 3. Thank You Section */
 .thank-you {
     max-width: 1200px;
