@@ -127,16 +127,19 @@ nav a { text-decoration: none; color: #1F2937; font-size: 15px; font-weight: 500
     overflow: hidden;
 }
 
-/* EcoLife Card (Exact Figma Color #D3F8F8) */
+/* EcoLife Card (Thoda neeche aur lamba) */
 .ecolife-card {
     background-color: #D3F8F8;
     color: #18181B;
+    height: 750px;
+    margin-top: 16px;
 }
 
-/* E-ComMart Card (Exact Figma Color #222222) */
+/* E-ComMart Card (Thoda upar aur chota) */
 .ecommart-card {
     background-color: #222224;
     color: #FFFFFF;
+    height: 715px;
 }
 
 /* Circle aur Mockup Alignment */
