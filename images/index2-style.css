@@ -254,9 +254,12 @@ footer div:last-child a { margin-right: 0; margin-left: 25px; }
     .bg-circle { width: 270px; }
     .main-mockup { width: 260px; }
 
+    /* EcoLife aur E-ComMart Mobile Settings */
     .two-cards-grid { grid-template-columns: 1fr; gap: 30px; }
-    .project-card:first-child img,
-    .project-card:last-child img { height: auto; }
+    .ecolife-card, .ecommart-card { height: auto; padding: 40px 25px; }
+    .card-circle { width: 250px; }
+    .phone-size { width: 190px; }
+    .web-size { width: 260px; }
 
     .thank-you { min-height: auto; padding: 60px 20px; }
     .thank-box { flex-direction: column; text-align: center; }
