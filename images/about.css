@@ -42,16 +42,14 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #4b5563;
+  color: #18181b;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.2s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  color: #111827;
-  font-weight: 600;
+.nav-links a:hover {
+  color: #2455f6;
 }
 
 .btn-pill {
@@ -60,7 +58,7 @@ body {
   padding: 10px 28px;
   border-radius: 50px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 500 !important;
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.2s ease;
@@ -72,7 +70,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  padding: 40px 0 80px;
+  padding: 40px 0 40px;
 }
 
 .hero-container {
@@ -94,22 +92,22 @@ body {
   margin-bottom: 24px;
 }
 
-/* Waving Hand SVG Crop Fix */
+/* Waving Hand SVG Full Fix */
 .wave-crop {
   display: inline-block;
-  width: 44px;
-  height: 44px;
+  width: 56px;
+  height: 54px;
   overflow: hidden;
   vertical-align: middle;
   position: relative;
 }
 
 .wave-crop img {
-  width: 240px;
+  width: 255px;
   height: auto;
   position: absolute;
-  right: 0;
-  top: -4px;
+  right: -2px;
+  top: -3px;
 }
 
 .hero-text {
@@ -118,19 +116,6 @@ body {
   line-height: 1.8;
   margin-bottom: 20px;
   max-width: 530px;
-}
-
-.lets-connect {
-  display: inline-block;
-  margin-top: 12px;
-  color: #2455f6;
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.lets-connect:hover {
-  text-decoration: underline;
 }
 
 .hero-image {
@@ -143,6 +128,22 @@ body {
   object-fit: cover;
   border-radius: 20px;
   display: block;
+}
+
+.connect-row {
+  margin-top: 36px;
+}
+
+.lets-connect {
+  display: inline-block;
+  color: #2455f6;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.lets-connect:hover {
+  text-decoration: underline;
 }
 
 /* Main Two-Column Section */
@@ -161,14 +162,15 @@ body {
 .right-column {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 44px;
 }
 
+/* Softer Heading Weight & Color like Figma */
 .section-title {
-  font-size: 22px;
-  font-weight: 600;
-  color: #18181b;
-  margin-bottom: 22px;
+  font-size: 21px;
+  font-weight: 500;
+  color: #3f3f46;
+  margin-bottom: 20px;
 }
 
 /* Working History Cards */
@@ -181,15 +183,20 @@ body {
 .history-card {
   background-color: #ffffff;
   border: 1px solid #ececec;
-  border-radius: 16px;
+  border-radius: 24px;
   padding: 28px 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+
 .history-logo {
-  width: 52px;
-  height: 52px;
-  margin-bottom: 16px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 14px;
   display: flex;
   align-items: center;
 }
@@ -214,14 +221,14 @@ body {
 .company-meta {
   font-size: 13px;
   color: #71717a;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .history-desc {
   font-size: 13px;
   color: #71717a;
-  line-height: 1.7;
-  margin-bottom: 12px;
+  line-height: 1.65;
+  margin-bottom: 10px;
 }
 
 .history-desc:last-child {
@@ -289,22 +296,35 @@ body {
   font-size: 12px;
   color: #a1a1aa;
 }
-
-/* Right Column Side Boxes */
+/* Right Column Side Boxes (Exact Figma Sizes & Radius) */
 .side-box {
   background-color: #ffffff;
   border: 1px solid #ececec;
-  border-radius: 16px;
-  padding: 28px;
+  border-radius: 24px;
+  padding: 24px 28px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
 }
 
-/* Design Skills List with Hollow Circles */
+/* 1. Design Skills: Exact 300px height matching First History Card */
+.first-history-card {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.design-skills-box {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .design-skills-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 15px;
 }
 
 .design-skills-list li {
@@ -324,58 +344,80 @@ body {
   flex-shrink: 0;
 }
 
-/* Working Tools 3x4 Grid */
+/* 2. Working Tools: Exact 559px height matching Card 2 & Card 3 */
+.tools-box {
+  height: 559px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 20px;
+}
+
 .tools-grid {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px 16px;
+  gap: 24px 12px;
 }
 
 .tool-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 10px;
+  justify-content: flex-start;
 }
 
 .tool-item img {
-  width: 44px;
-  height: 44px;
+  width: 78px;
+  height: 78px;
   object-fit: contain;
 }
 
-.tool-item span {
+.tool-item.icon-only img {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 8px;
+}
+
+.tool-item.icon-only span {
   font-size: 12px;
   font-weight: 500;
   color: #52525b;
+  line-height: 1.2;
 }
 
-/* Language Skills */
+
+/* 3. Language Skills: Exact 175px height & 35px higher than Education */
+.lang-section {
+  margin-top: -35px;
+}
+
+
+.lang-box {
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 .lang-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
 }
 
 .lang-item {
   display: flex;
   align-items: center;
-  gap: 16px;
 }
 
 .lang-item img {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 125px;
+  height: auto;
+  object-fit: contain;
 }
 
-.lang-item span {
-  font-size: 14px;
-  font-weight: 500;
-  color: #52525b;
-}
 
 /* Thank You / CTA Section */
 .thankyou-section {
@@ -458,6 +500,12 @@ body {
 
   .two-col-cards {
     grid-template-columns: 1fr;
+  }
+
+  .design-skills-box,
+  .tools-box,
+  .lang-box {
+    min-height: auto;
   }
 
   .footer-container {
