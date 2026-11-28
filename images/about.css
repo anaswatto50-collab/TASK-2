@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header / Navbar */
+.navbar {
+  padding: 28px 0;
+  background-color: #ffffff;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 34px;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #111827;
+  font-weight: 600;
+}
+
+.btn-pill {
+  background-color: #2455f6;
+  color: #ffffff !important;
+  padding: 10px 28px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.btn-pill:hover {
+  background-color: #1a44d1;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 40px 0 80px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #141414;
+  margin-bottom: 24px;
+}
+
+/* Waving Hand SVG Crop Fix */
+.wave-crop {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  vertical-align: middle;
+  position: relative;
+}
+
+.wave-crop img {
+  width: 240px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: -4px;
+}
+
+.hero-text {
+  font-size: 15px;
+  color: #52525b;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 530px;
+}
+
+.lets-connect {
+  display: inline-block;
+  margin-top: 12px;
+  color: #2455f6;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.lets-connect:hover {
+  text-decoration: underline;
+}
+
+.hero-image {
+  flex-shrink: 0;
+}
+
+.hero-image img {
+  width: 430px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+/* Main Two-Column Section */
+.main-section {
+  padding: 20px 0 90px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #18181b;
+  margin-bottom: 22px;
+}
+
+/* Working History Cards */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.history-card {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  padding: 28px 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.history-logo {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.history-logo.wide {
+  width: 64px;
+}
+
+.history-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.role-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #18181b;
+  margin-bottom: 4px;
+}
+
+.company-meta {
+  font-size: 13px;
+  color: #71717a;
+  margin-bottom: 16px;
+}
+
+.history-desc {
+  font-size: 13px;
+  color: #71717a;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.history-desc:last-child {
+  margin-bottom: 0;
+}
+/* Education & Certifications Side-by-Side Cards */
+.two-col-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.edu-card {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  padding: 26px 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.edu-logo {
+  height: 46px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.edu-logo img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.cert-logo {
+  height: 36px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.cert-logo img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.edu-degree {
+  font-size: 15px;
+  font-weight: 600;
+  color: #18181b;
+  line-height: 1.45;
+  margin-bottom: 10px;
+}
+
+.edu-institute {
+  font-size: 13px;
+  color: #71717a;
+  margin-bottom: 4px;
+}
+
+.edu-date {
+  font-size: 12px;
+  color: #a1a1aa;
+}
+
+/* Right Column Side Boxes */
+.side-box {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+/* Design Skills List with Hollow Circles */
+.design-skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.design-skills-list li {
+  font-size: 14px;
+  color: #52525b;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.design-skills-list li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1.5px solid #a1a1aa;
+  flex-shrink: 0;
+}
+
+/* Working Tools 3x4 Grid */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px 16px;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.tool-item img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.tool-item span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #52525b;
+}
+
+/* Language Skills */
+.lang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lang-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lang-item img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.lang-item span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #52525b;
+}
+
+/* Thank You / CTA Section */
+.thankyou-section {
+  padding: 20px 0 90px;
+}
+
+.thankyou-title {
+  font-size: 46px;
+  font-weight: 700;
+  color: #141414;
+  margin-bottom: 10px;
+}
+
+.thankyou-sub {
+  font-size: 14px;
+  color: #71717a;
+  margin-bottom: 36px;
+}
+
+.thankyou-lead {
+  font-size: 24px;
+  font-weight: 500;
+  color: #18181b;
+  line-height: 1.45;
+  margin-bottom: 32px;
+}
+
+.btn-large {
+  padding: 14px 36px;
+  font-size: 15px;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #e4e4e7;
+  padding: 28px 0 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-left a,
+.footer-right a {
+  text-decoration: none;
+  color: #71717a;
+  transition: color 0.2s ease;
+}
+
+.footer-left a:hover,
+.footer-right a:hover {
+  color: #2455f6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .two-col-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
