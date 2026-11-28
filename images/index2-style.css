@@ -108,38 +108,32 @@ nav a { text-decoration: none; color: #1F2937; font-size: 15px; font-weight: 500
 .featured-info h2 { font-size: 46px; font-weight: 800; margin-bottom: 14px; }
 .featured-info p { font-size: 16px; opacity: 0.85; }
 
-/* Card 2 & 3: Exact Figma Layout (600x750 aur 540x750) */
+/* Card 2 & 3: Equal Height, Equal Spacing, aur Exact Black Circle */
 .two-cards-grid {
     display: grid;
-    grid-template-columns: 600fr 540fr;
-    gap: 51px;
-    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
 }
 
+/* Dono Cards ki Height Upar aur Neeche se Bilkul Barabar (750px) */
 .card-box {
     height: 750px;
     border-radius: 30px;
-    padding: 50px 45px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
 }
 
-/* EcoLife Card (16px neeche taake upar-neeche ka exact Figma faasla aaye) */
+/* EcoLife Card */
 .ecolife-card {
     background-color: #D3F8F8;
     color: #18181B;
-    margin-top: 16px;
 }
 
-/* E-ComMart Card (Top se upar, height 750px) */
-.ecommart-card {
-    background-color: #222224;
-    color: #FFFFFF;
-}
-
-.card-visual {
+/* EcoLife ke Circle aur Mobile ko wapis Center mein Overlap karne ke liye */
+.ecolife-card .card-visual {
     position: relative;
     flex: 1;
     display: flex;
@@ -147,27 +141,79 @@ nav a { text-decoration: none; color: #1F2937; font-size: 15px; font-weight: 500
     align-items: center;
 }
 
-.card-circle {
+.ecolife-card .card-circle {
     position: absolute;
     width: 340px;
     z-index: 1;
 }
 
-/* E-ComMart ka circle top-left par */
-.ecommart-card .card-circle {
-    transform: translate(-32px, -25px);
+.ecolife-card .phone-size {
+    position: relative;
+    width: 265px;
+    z-index: 2;
 }
 
-.card-mockup { position: relative; z-index: 2; }
-.phone-size { width: 265px; }
-.web-size { width: 380px; border-radius: 16px; }
 
-.card-content h2 { font-size: 38px; font-weight: 800; margin: 14px 0 8px; }
-.card-content p { font-size: 15px; opacity: 0.85; }
+/* E-ComMart Card (Padding hata di taake Figma ke exact X/Y numbers kaam karein) */
+.ecommart-card {
+    background-color: #222224;
+    color: #FFFFFF;
+    padding: 0;
+}
 
-.green-badge { background-color: #26C881; color: #FFFFFF; }
-.tan-badge { background-color: #E3A869; color: #18181B; }
+.ecommart-card .card-visual {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    display: block;
+}
 
+/* Circle: Exact Figma (X: 30px, Y: 34px, W: 405px) */
+.ecommart-card .card-circle {
+    position: absolute;
+    width: 405px;
+    left: 30px;
+    top: 34px;
+    z-index: 1;
+}
+
+/* Website Card: Exact Figma (X: 86px, Y: 41px, W: 417px) */
+.ecommart-card .web-size {
+    position: absolute;
+    width: 417px;
+    left: 86px;
+    top: 41px;
+    border-radius: 0;
+    z-index: 2;
+}
+
+/* Neeche wale Text ko wapis 50px padding dene ke liye */
+.ecommart-card .card-content {
+    padding: 0 50px 50px;
+}
+
+
+/* Card Text aur Badges */
+.card-content h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin: 14px 0 8px;
+}
+
+.card-content p {
+    font-size: 15px;
+    opacity: 0.85;
+}
+
+.green-badge {
+    background-color: #26C881;
+    color: #FFFFFF;
+}
+
+.tan-badge {
+    background-color: #E3A869;
+    color: #18181B;
+}
 /* 3. Thank You Section */
 .thank-you {
     max-width: 1200px;
